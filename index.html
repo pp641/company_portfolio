@@ -1,52 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>steepnote - Next Gen IT Services</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>steepnote - Next Gen IT Services </title>
-
-  <!-- 
+    <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml">
+    <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml" />
 
-  <!-- 
+    <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- 
+    <!-- 
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-
-<body id="top">
-
-  <!-- 
+  <body id="top">
+    <!-- 
     - #HEADER
   -->
 
-  <header class="header" data-header>
-    <div class="container">
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./assets/images/steepnote_gray.png" alt="steepnote" />
+        </a>
 
-      <a href="#" class="logo" >
-        <img src="./assets/images/steepnote_gray.png" alt="steepnote">
-      </a>
+        <button class="nav-toggle-btn" data-nav-toggle-btn>
+          <ion-icon name="menu-outline" class="open"></ion-icon>
+          <ion-icon name="close-outline" class="close"></ion-icon>
+        </button>
 
-      <button class="nav-toggle-btn" data-nav-toggle-btn>
-        <ion-icon name="menu-outline" class="open"></ion-icon>
-        <ion-icon name="close-outline" class="close"></ion-icon>
-      </button>
+        <nav class="navbar">
+          <div class="container">
+            <!-- Navigation Links -->
+            <ul class="navbar-list">
+              <li>
+                <a href="#home" class="navbar-link" data-navbar-link>Home</a>
+              </li>
+              <li>
+                <a href="#projects" class="navbar-link" data-navbar-link
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="#service" class="navbar-link" data-navbar-link
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="navbar-link" data-navbar-link
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <link
+                  href="https://assets.calendly.com/assets/external/widget.css"
+                  rel="stylesheet"
+                />
+               
+                  <script
+                    src="https://assets.calendly.com/assets/external/widget.js"
+                    type="text/javascript"
+                    async
+                  ></script>
 
-      <nav class="navbar">
+                  <a
+                    href=""
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/prajjwalpandey641/pp641'});return false;"
+                    >
+                      <button class="btn btn-secondary">
+                    
+                          <span>Schedule a Meet</span>
+                          <ion-icon name="calendar-outline"></ion-icon>
+                          <ion-icon name="chevron-forward-outline"></ion-icon>
+                      </button> 
+                  </a>
+                
+              </li>
+
+              <li>
+                <!-- Button 2: Connect on WhatsApp -->
+                <a
+                  href="https://api.whatsapp.com/send?phone=919793427703&text=Hello%2C%20I%27m%20interested%20in%20exploring%20your%20technology%20services."
+                >
+                  <button class="btn btn-secondary" id="connect-whatsapp">
+                    <span>Connect on</span>
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Calendly link widget begin -->
+
+        <!-- Calendly link widget end -->
+
+        <!-- <nav class="navbar"> 
         <div class="container">
+
           <ul class="navbar-list">
 
             <li>
@@ -65,515 +132,490 @@
               <a href="#contact" class="navbar-link" data-navbar-link>Contact Us</a>
             </li>
 
+          
+
+            
+
           </ul>
+
+          <div class="button-div">
+
+          <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+          <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+          <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/prajjwalpandey641/pp641'});return false;">
+            <button class="btn btn-secondary" id="contacts">
+              <span>Schedule a Meet</span> <ion-icon name="calendar-outline"></ion-icon>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+          </a>
+
+        
+        <a href="https://api.whatsapp.com/send?phone=919793427703&text=Hello%2C%20I%27m%20interested%20in%20exploring%20your%20technology%20services.">
+          <button class="btn btn-secondary" id="contacts">
+            <span>Connect on</span> <ion-icon name="logo-whatsapp"></ion-icon>
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button></a>  
+
         </div>
-      </nav>
-
-      <button class="btn btn-secondary" id="contacts" onclick="openCalendly()">
-        <span>Schedule a Meet</span>
-                    
-     
-        <ion-icon name="chevron-forward-outline"></ion-icon>
-      </button>
-      
-      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-
-
-      <a href="https://api.whatsapp.com/send?phone=919793427703&text=Hello%2C%20I%27m%20interested%20in%20exploring%20your%20technology%20services.">
-        <button class="btn btn-secondary" id="contacts">
-          <span>Connect on</span> <ion-icon name="logo-whatsapp"></ion-icon>
-          <ion-icon name="chevron-forward-outline"></ion-icon>
-        </button></a> 
-
-
-        <script type="text/javascript">
-          function openCalendly() {
-            Calendly.initPopupWidget({ url: 'https://calendly.com/prajjwalpandey641/pp641' });
-            return false;
-          }
-      
-          document.getElementById('calendlyButton').addEventListener('click', function() {
-            openCalendly();
-          });
-        </script>
-
-      
-    </div>
-  </header>
 
 
 
+        </div>
+        
 
 
-  <main>
-    <article>
+      </nav>  -->
+      </div>
+    </header>
 
-      <!-- 
+    <main>
+      <article>
+        <!-- 
         - #HERO
       -->
 
-      <section class="hero" id="home">
+        <section class="hero" id="home">
+          <img
+            src="./assets/images/shape1.png"
+            alt="Illustration art"
+            class="shape shape-1"
+          />
+          <img
+            src="./assets/images/shape2.png"
+            alt="Illustration art"
+            class="shape shape-2"
+          />
+          <img
+            src="./assets/images/shape3.png"
+            alt="Illustration art"
+            class="shape shape-3"
+          />
 
-        <img src="./assets/images/shape1.png" alt="Illustration art" class="shape shape-1">
-        <img src="./assets/images/shape2.png" alt="Illustration art" class="shape shape-2">
-        <img src="./assets/images/shape3.png" alt="Illustration art" class="shape shape-3">
+          <div class="container">
+            <figure class="hero-banner">
+              <img
+                src="./assets/images/hero-banner.png"
+                alt="Illustration art"
+                loading="lazy"
+                class="w-100"
+              />
+            </figure>
 
-        <div class="container">
+            <div class="hero-content">
+              <h2 class="h1 hero-title">
+                Empowering Innovation through Technology
+              </h2>
 
-          <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.png" alt="Illustration art" loading="lazy" class="w-100">
-          </figure>
+              <p class="section-text">
+                We focus on providing solutions for our customers and assisting
+                them on their pain points.
+              </p>
 
-          <div class="hero-content">
-
-            <h2 class="h1 hero-title">Empowering Innovation through Technology</h2>
-
-            <p class="section-text">
-              We focus on providing solutions for our customers and assisting them on their pain points.
-            </p>
-
-            
-
-            <button class="btn btn-primary">
-              <span>Get Started Now</span>
-              <ion-icon name="chevron-forward-outline"></ion-icon>
-            </button>
-
+              <button class="btn btn-primary">
+                <span>Get Started Now</span>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </button>
+            </div>
           </div>
+        </section>
 
-        </div>
+        <section class="features" id="projects">
+          <div class="container">
+            <p class="section-subtitle">How Can We Help You</p>
 
-      </section>
+            <h2 class="h2 section-title">
+              We’re helping teams do their best work
+            </h2>
 
+            <ul class="features-list">
+              <li>
+                <div class="features-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-1.png"
+                      alt="Illustration icon"
+                    />
+                  </div>
 
+                  <h3 class="h3 card-title">Web/Android App Restructuring</h3>
 
-
-      <section class="features" id="projects">
-        <div class="container">
-
-          <p class="section-subtitle">How Can We Help You</p>
-
-          <h2 class="h2 section-title">We’re helping teams do their best work</h2>
-
-          <ul class="features-list">
-
-            <li>
-              <div class="features-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/features-icon-1.png" alt="Illustration icon">
+                  <p class="card-text">
+                    Got Stuck with Old Legacy Systems and facing Problems while
+                    scaling. We're here to help you out
+                  </p>
                 </div>
-
-                <h3 class="h3 card-title">Web/Android App Restructuring</h3>
-
-                <p class="card-text">
-                  Got Stuck with Old Legacy Systems and facing Problems while scaling.
-                  We're here to help you out
-                </p>
-
-                
-
-              </div>
-            </li>
-
-            <li>
-              <div class="features-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/features-icon-2.png" alt="Illustration icon">
-                </div>
-
-                <h3 class="h3 card-title">Building Full Fledge Web/Andoid App</h3>
-
-                <p class="card-text">
-                  Looking to Build a Full Fledge Application for your business . We're here to assist you with best service.
-                </p>
-
-
-
-              </div>
-            </li>
-
-            <li>
-              <div class="features-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/features-icon-3.png" alt="Illustration icon">
-                </div>
-
-                <h3 class="h3 card-title">Automation and Devops</h3>
-
-                <p class="card-text">
-                  Got Stuck with manual fixings and Patches , We're here to provide a better automation solution for your app 
-                </p>
-
-
-
-              </div>
-            </li>
-
-            <li>
-              <div class="features-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/features-icon-4.png" alt="Illustration icon">
-                </div>
-
-                <h3 class="h3 card-title">Data Migration and App Performance </h3>
-
-                <p class="card-text">
-                 Want to speed up your application,optimize builds and improve performance , we're here to assist you with industry approved solutions
-                </p>
-
-
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-      <section class="service" id="service">
-        <div class="container">
-
-          <figure class="service-banner">
-            <img src="./assets/images/service-1.png" alt="Illustration art" loading="lazy" class="w-100">
-          </figure>
-
-          <div class="service-content">
-
-            <p class="section-subtitle">Services We Offer</p>
-
-            <h2 class="h2 section-title">We are here, to help your startup business</h2>
-
-            <ul class="service-list">
-
-              <li class="service-item">
-
-                <div class="service-item-icon">
-                  <ion-icon name="checkmark-outline"></ion-icon>
-                </div>
-
-                <h3 class="h3 service-item-title">Web App Development</h3>
-
               </li>
 
-              <li class="service-item">
+              <li>
+                <div class="features-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-2.png"
+                      alt="Illustration icon"
+                    />
+                  </div>
 
-                <div class="service-item-icon">
-                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <h3 class="h3 card-title">
+                    Building Full Fledge Web/Andoid App
+                  </h3>
+
+                  <p class="card-text">
+                    Looking to Build a Full Fledge Application for your business
+                    . We're here to assist you with best service.
+                  </p>
                 </div>
-
-                <h3 class="h3 service-item-title">Android App Development</h3>
-
               </li>
 
-              <li class="service-item">
+              <li>
+                <div class="features-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-3.png"
+                      alt="Illustration icon"
+                    />
+                  </div>
 
-                <div class="service-item-icon">
-                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <h3 class="h3 card-title">Automation and Devops</h3>
+
+                  <p class="card-text">
+                    Got Stuck with manual fixings and Patches , We're here to
+                    provide a better automation solution for your app
+                  </p>
                 </div>
-
-                <h3 class="h3 service-item-title">Cloud Migration and  Automation</h3>
-
               </li>
 
-              <li class="service-item">
+              <li>
+                <div class="features-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-4.png"
+                      alt="Illustration icon"
+                    />
+                  </div>
 
-                <div class="service-item-icon">
-                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <h3 class="h3 card-title">
+                    Data Migration and App Performance
+                  </h3>
+
+                  <p class="card-text">
+                    Want to speed up your application,optimize builds and
+                    improve performance , we're here to assist you with industry
+                    approved solutions
+                  </p>
                 </div>
-
-                <h3 class="h3 service-item-title">Shopify App Store Development</h3>
-
               </li>
-
-
-              <li class="service-item">
-
-                <div class="service-item-icon">
-                  <ion-icon name="checkmark-outline"></ion-icon>
-                </div>
-
-                <h3 class="h3 service-item-title">UI/UX Design and Development</h3>
-
-              </li>
-
             </ul>
-
           </div>
+        </section>
 
-          <figure class="service-banner">
-            <img src="./assets/images/service-2.png" alt="Illustration art" loading="lazy" class="w-100">
-          </figure>
+        <section class="service" id="service">
+          <div class="container">
+            <figure class="service-banner">
+              <img
+                src="./assets/images/service-1.png"
+                alt="Illustration art"
+                loading="lazy"
+                class="w-100"
+              />
+            </figure>
 
-          <div class="service-content">
+            <div class="service-content">
+              <p class="section-subtitle">Services We Offer</p>
 
-            <p class="section-subtitle">Our Expertise</p>
+              <h2 class="h2 section-title">
+                We are here, to help your startup business
+              </h2>
 
-            <h2 class="h2 section-title">Best IT & technology service in your area</h2>
+              <ul class="service-list">
+                <li class="service-item">
+                  <div class="service-item-icon">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
 
-            <ul class="service-list">
+                  <h3 class="h3 service-item-title">Web App Development</h3>
+                </li>
 
-              <li class="service-item">
+                <li class="service-item">
+                  <div class="service-item-icon">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
 
-                <div class="service-item-icon">
-                  <ion-icon name="checkmark-outline"></ion-icon>
-                </div>
+                  <h3 class="h3 service-item-title">Android App Development</h3>
+                </li>
 
-                <h3 class="h3 service-item-title">Design & Development</h3>
+                <li class="service-item">
+                  <div class="service-item-icon">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
 
-              </li>
+                  <h3 class="h3 service-item-title">
+                    Cloud Migration and Automation
+                  </h3>
+                </li>
 
-              
+                <li class="service-item">
+                  <div class="service-item-icon">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
 
-              <li class="service-item">
+                  <h3 class="h3 service-item-title">
+                    Shopify App Store Development
+                  </h3>
+                </li>
 
-                <div class="service-item-icon">
-                  <ion-icon name="checkmark-outline"></ion-icon>
-                </div>
+                <li class="service-item">
+                  <div class="service-item-icon">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
 
-                <h3 class="h3 service-item-title">Android Apps Development</h3>
+                  <h3 class="h3 service-item-title">
+                    UI/UX Design and Development
+                  </h3>
+                </li>
+              </ul>
+            </div>
 
-              </li>
+            <figure class="service-banner">
+              <img
+                src="./assets/images/service-2.png"
+                alt="Illustration art"
+                loading="lazy"
+                class="w-100"
+              />
+            </figure>
 
+            <div class="service-content">
+              <p class="section-subtitle">Our Expertise</p>
 
-              <li class="service-item">
+              <h2 class="h2 section-title">
+                Best IT & technology service in your area
+              </h2>
 
-                <div class="service-item-icon">
-                  <ion-icon name="checkmark-outline"></ion-icon>
-                </div>
+              <ul class="service-list">
+                <li class="service-item">
+                  <div class="service-item-icon">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
 
-                <h3 class="h3 service-item-title">Node js Development</h3>
+                  <h3 class="h3 service-item-title">Design & Development</h3>
+                </li>
 
-              </li>
+                <li class="service-item">
+                  <div class="service-item-icon">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
 
-              <li class="service-item">
+                  <h3 class="h3 service-item-title">
+                    Android Apps Development
+                  </h3>
+                </li>
 
-                <div class="service-item-icon">
-                  <ion-icon name="checkmark-outline"></ion-icon>
-                </div>
+                <li class="service-item">
+                  <div class="service-item-icon">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
 
-                <h3 class="h3 service-item-title">Laravel Web Development</h3>
+                  <h3 class="h3 service-item-title">Node js Development</h3>
+                </li>
 
-              </li>
+                <li class="service-item">
+                  <div class="service-item-icon">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
 
-              <li class="service-item">
+                  <h3 class="h3 service-item-title">Laravel Web Development</h3>
+                </li>
 
-                <div class="service-item-icon">
-                  <ion-icon name="checkmark-outline"></ion-icon>
-                </div>
+                <li class="service-item">
+                  <div class="service-item-icon">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
 
-                <h3 class="h3 service-item-title">React Web Development</h3>
+                  <h3 class="h3 service-item-title">React Web Development</h3>
+                </li>
 
-              </li>
+                <li class="service-item">
+                  <div class="service-item-icon">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
 
+                  <h3 class="h3 service-item-title">
+                    Ruby on Rails Web Development
+                  </h3>
+                </li>
 
-              <li class="service-item">
+                <li class="service-item">
+                  <div class="service-item-icon">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
 
-                <div class="service-item-icon">
-                  <ion-icon name="checkmark-outline"></ion-icon>
-                </div>
-
-                <h3 class="h3 service-item-title">Ruby on Rails Web Development</h3>
-
-              </li>
-
-              <li class="service-item">
-
-                <div class="service-item-icon">
-                  <ion-icon name="checkmark-outline"></ion-icon>
-                </div>
-
-                <h3 class="h3 service-item-title">Flutter App Development</h3>
-
-              </li>
-
-            </ul>
-
+                  <h3 class="h3 service-item-title">Flutter App Development</h3>
+                </li>
+              </ul>
+            </div>
           </div>
+        </section>
+      </article>
+    </main>
 
-        </div>
-      </section>
-
-
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
+    <!-- 
     - #FOOTER
   -->
 
-  <footer class="footer" id="contact">
+    <footer class="footer" id="contact">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img src="./assets/images/steepnote_gray.png" alt="steepnote" />
+            </a>
 
-    <div class="footer-top">
-      <div class="container">
+            <p class="section-text">
+              Empowering Businesses Through Cutting-Edge Software Development,
+              Strategic Digital Solutions, and Unparalleled Technical Expertise.
+            </p>
 
-        <div class="footer-brand">
+            <div class="location-text">
+              <div class="location-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-          <a href="#" class="logo">
-            <img src="./assets/images/steepnote_gray.png"   alt="steepnote">
-          </a>
-
-          <p class="section-text">
-            Empowering Businesses Through Cutting-Edge Software Development, Strategic Digital Solutions, and Unparalleled Technical Expertise.
-          </p>
-
-          <div class="location-text">
-            <div class="location-icon">
-              <ion-icon name="location-outline"></ion-icon>
+              <address class="address">
+                Sector-15 , Noida-201301 , Uttar Pradesh
+              </address>
             </div>
-
-            <address class="address">
-              Sector-15 , Noida-201301 , Uttar Pradesh
-            </address>
           </div>
 
+          <div class="quicklink-box">
+            <p class="h3 quicklink-title">Our Services</p>
+
+            <ul class="quicklink-list">
+              <li>
+                <a href="#" class="quicklink"> MERN Stack Development </a>
+              </li>
+
+              <li>
+                <a href="#" class="quicklink"> UI/UX Development </a>
+              </li>
+
+              <li>
+                <a href="#" class="quicklink">Native/Flutter App Development</a>
+              </li>
+
+              <li>
+                <a href="#" class="quicklink">Cloud Services</a>
+              </li>
+
+              <li>
+                <a href="#" class="quicklink">Automation and Testing</a>
+              </li>
+
+              <li>
+                <a href="#" class="quicklink">Data Analytics</a>
+              </li>
+
+              <li>
+                <a href="#" class="quicklink">SEO and Social Media Marketing</a>
+              </li>
+
+              <li>
+                <a href="#" class="quicklink"
+                  >Software Architecture and Design</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact">
+            <p class="h3 contact-title">Contact with us</p>
+
+            <ul class="contact-list">
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+
+                <a
+                  href="mailto:prajjwalpandey641@gmail.com"
+                  class="contact-link"
+                  >prajjwalpandey641@gmail.com</a
+                >
+              </li>
+
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+
+                <a href="tel:+919793427703" class="contact-link"
+                  >+919793427703</a
+                >
+              </li>
+
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <ion-icon name="add"></ion-icon>
+                </div>
+
+                <a
+                  target="_blank"
+                  href="https://forms.gle/gpy1SBoeqGQNYJYo6"
+                  class="contact-link"
+                  >Connect via Form</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
 
-        <div class="quicklink-box">
-          <p class="h3 quicklink-title">Our Services</p>
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2024 <a href="#">Steepnote</a>. All Rights Reserved
+          </p>
 
-          <ul class="quicklink-list">
-
+          <ul class="social-list">
             <li>
-              <a href="#" class="quicklink"> MERN Stack Development </a>
+              <a href="https://www.facebook.com/" class="social-link">
+                <ion-icon name="logo-facebook"> </ion-icon>
+              </a>
             </li>
 
             <li>
-              <a href="#" class="quicklink"> UI/UX Development </a>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
             </li>
 
             <li>
-              <a href="#" class="quicklink">Native/Flutter App Development</a>
+              <a
+                href="https://www.linkedin.com/in/prajjwal-pandey-518a22172/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
             </li>
 
             <li>
-              <a href="#" class="quicklink">Cloud Services</a>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
             </li>
-
-            <li>
-              <a href="#" class="quicklink">Automation and Testing</a>
-            </li>
-
-            <li>
-              <a href="#" class="quicklink">Data Analytics</a>
-            </li>
-
-            <li>
-              <a href="#" class="quicklink">SEO and Social Media Marketing</a>
-            </li>
-
-            <li>
-              <a href="#" class="quicklink">Software Architecture and Design</a>
-            </li>
-
           </ul>
         </div>
-
-        <div class="contact">
-          <p class="h3 contact-title">Contact with us</p>
-
-          <ul class="contact-list">
-
-            <li class="contact-item">
-              <div class="contact-icon">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
-
-              <a href="mailto:prajjwalpandey641@gmail.com" class="contact-link">prajjwalpandey641@gmail.com</a>
-            </li>
-
-            <li class="contact-item">
-              <div class="contact-icon">
-                <ion-icon name="call-outline"></ion-icon>
-              </div>
-
-              <a href="tel:+919793427703" class="contact-link">+919793427703</a>
-            </li>
-
-            <li class="contact-item">
-              <div class="contact-icon">
-                <ion-icon name="add"></ion-icon>
-              </div>
-
-              <a target="_blank" href="https://forms.gle/gpy1SBoeqGQNYJYo6" class="contact-link">Connect via Form</a>
-            </li>
-
-            
-
-          </ul>
-
-        </div>
-
       </div>
-    </div>
+    </footer>
 
+    <script src="./assets/js/script.js"></script>
 
-    <div class="footer-bottom">
-      <div class="container">
-
-        <p class="copyright">
-          &copy; 2024 <a href="#">Steepnote</a>. All Rights Reserved
-        </p>
-
-
-
-       
-
-
-        <ul class="social-list">
-
-          <li>
-            <a href="https://www.facebook.com/" class="social-link">
-              <ion-icon name="logo-facebook"> </ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.linkedin.com/in/prajjwal-pandey-518a22172/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-        </ul>
-
-      </div>
-    </div>
-
-  </footer>
-
-
-
-
-
-
-
-
-  <script src="./assets/js/script.js"></script>
-
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

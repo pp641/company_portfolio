@@ -200,7 +200,7 @@ body { background: var(--white); }
 }
 
 .header.nav-active {
-  height: 250px;
+  height: 350px;
   transition: 0.5s ease-out;
 }
 
@@ -268,7 +268,7 @@ body { background: var(--white); }
 
 .navbar-link:is(:hover, :focus) { color: var(--red-crayola); }
 
-.header .btn { display: none; }
+.header .btn { margin-top: 5px;margin-left: 10px;}
 
 
 
@@ -915,6 +915,9 @@ body { background: var(--white); }
     font-size: var(--fs-5);
   }
 
+  .button-div{
+    display: grid;
+  }
 
 
   /**
