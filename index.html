@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>steepnote - Next Gen It Services </title>
+  <title>steepnote - Next Gen IT Services </title>
 
   <!-- 
     - favicon
@@ -69,13 +69,35 @@
         </div>
       </nav>
 
-      <button class="btn btn-secondary" id="contacts">
-        <span>Get Started</span>
+      <button class="btn btn-secondary" id="contacts" onclick="openCalendly()">
+        <span>Schedule a Meet</span>
+                    
+     
         <ion-icon name="chevron-forward-outline"></ion-icon>
       </button>
+      
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+
+      <a href="https://api.whatsapp.com/send?phone=919793427703&text=Hello%2C%20I%27m%20interested%20in%20exploring%20your%20technology%20services.">
+        <button class="btn btn-secondary" id="contacts">
+          <span>Connect on</span> <ion-icon name="logo-whatsapp"></ion-icon>
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button></a> 
+
+
+        <script type="text/javascript">
+          function openCalendly() {
+            Calendly.initPopupWidget({ url: 'https://calendly.com/prajjwalpandey641/pp641' });
+            return false;
+          }
+      
+          document.getElementById('calendlyButton').addEventListener('click', function() {
+            openCalendly();
+          });
+        </script>
 
       
-
     </div>
   </header>
 
@@ -110,6 +132,8 @@
               We focus on providing solutions for our customers and assisting them on their pain points.
             </p>
 
+            
+
             <button class="btn btn-primary">
               <span>Get Started Now</span>
               <ion-icon name="chevron-forward-outline"></ion-icon>
@@ -127,7 +151,7 @@
       <section class="features" id="projects">
         <div class="container">
 
-          <p class="section-subtitle">How Can Help You</p>
+          <p class="section-subtitle">How Can We Help You</p>
 
           <h2 class="h2 section-title">We’re helping teams do their best work</h2>
 
@@ -500,11 +524,6 @@
         <p class="copyright">
           &copy; 2024 <a href="#">Steepnote</a>. All Rights Reserved
         </p>
-        <div class="calendly">
-          <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/prajjwalpandey641/pp641', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: undefined }); }</script>
-          </div>
 
 
 
