@@ -136,7 +136,7 @@ body { background: var(--white); }
 
 .section-text,
 .features .card-text {
-  color: var(--black-coral);
+  color: white;
   font-size: var(--fs-4);
   line-height: 1.8;
   margin-bottom: 15px;
@@ -290,8 +290,15 @@ body { background: var(--white); }
 
 .hero-content { text-align: center; }
 
-.hero-title
-.hero .section-text { margin-bottom: 20px; }
+.hero-title{
+  color: white
+}
+.hero 
+
+.section-text { 
+  margin-bottom: 20px; 
+  color: white;
+}
 
 .hero .btn { margin-inline: auto; }
 
@@ -1148,3 +1155,47 @@ body { background: var(--white); }
   .newsletter-content { width: 55%; }
 
 }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.video-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.outer-container{
+  margin-top: 25%;
+  /* background-color: white; */
+}
+
+
+.section-text-second{
+color: var(--black-coral);
+}
+
+.inner-button{
+  display: flex;
+  gap: 1em;
+}inner-display;
