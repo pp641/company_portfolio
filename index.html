@@ -34,9 +34,25 @@
 
     <header class="header" data-header>
       <div class="container">
-        <a href="#" class="logo">
-          <img src="./assets/images/steepnote_gray.png" alt="steepnote" />
+        <a href="#" class="logo" id="logoLink">
+          <img src="./assets/images/steepnote_white.png" alt="steepnote" id="logoImg" />
         </a>
+        <script>
+          // JavaScript code to change the logo on scroll
+          window.addEventListener('scroll', function() {
+            var logoImg = document.getElementById('logoImg');
+            var logoLink = document.getElementById('logoLink');
+      
+            // Check the scroll position, adjust as needed
+            if (window.scrollY > 100) {
+              logoImg.src = './assets/images/steepnote_gray.png'; // New logo image source
+              logoLink.classList.add('scrolled'); // Add a class for styling if needed
+            } else {
+              logoImg.src = './assets/images/steepnote_white.png'; // Default logo image source
+              logoLink.classList.remove('scrolled'); // Remove the class if not scrolled
+            }
+          });
+        </script>
 
         <button class="nav-toggle-btn" data-nav-toggle-btn>
           <ion-icon name="menu-outline" class="open"></ion-icon>
