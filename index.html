@@ -35,21 +35,25 @@
     <header class="header" data-header>
       <div class="container">
         <a href="#" class="logo" id="logoLink">
-          <img src="./assets/images/steepnote_white.png" alt="steepnote" id="logoImg" />
+          <img
+            src="./assets/images/steepnote_white.png"
+            alt="steepnote"
+            id="logoImg"
+          />
         </a>
         <script>
           // JavaScript code to change the logo on scroll
-          window.addEventListener('scroll', function() {
-            var logoImg = document.getElementById('logoImg');
-            var logoLink = document.getElementById('logoLink');
-      
+          window.addEventListener("scroll", function () {
+            var logoImg = document.getElementById("logoImg");
+            var logoLink = document.getElementById("logoLink");
+
             // Check the scroll position, adjust as needed
             if (window.scrollY > 100) {
-              logoImg.src = './assets/images/steepnote_gray.png'; // New logo image source
-              logoLink.classList.add('scrolled'); // Add a class for styling if needed
+              logoImg.src = "./assets/images/steepnote_gray.png"; // New logo image source
+              logoLink.classList.add("scrolled"); // Add a class for styling if needed
             } else {
-              logoImg.src = './assets/images/steepnote_white.png'; // Default logo image source
-              logoLink.classList.remove('scrolled'); // Remove the class if not scrolled
+              logoImg.src = "./assets/images/steepnote_white.png"; // Default logo image source
+              logoLink.classList.remove("scrolled"); // Remove the class if not scrolled
             }
           });
         </script>
@@ -86,29 +90,26 @@
                   href="https://assets.calendly.com/assets/external/widget.css"
                   rel="stylesheet"
                 />
-               
-                  <script
-                    src="https://assets.calendly.com/assets/external/widget.js"
-                    type="text/javascript"
-                    async
-                  ></script>
 
-                  <a
-                    href=""
-                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/prajjwalpandey641/pp641'});return false;"
-                    >
-                      <button class="btn btn-secondary">
-                    
-                          <span>Schedule a Meet</span>
-                          <ion-icon name="calendar-outline"></ion-icon>
-                          <ion-icon name="chevron-forward-outline"></ion-icon>
-                      </button> 
-                  </a>
-                
+                <script
+                  src="https://assets.calendly.com/assets/external/widget.js"
+                  type="text/javascript"
+                  async
+                ></script>
+
+                <a
+                  href=""
+                  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/prajjwalpandey641/pp641'});return false;"
+                >
+                  <button class="btn btn-secondary">
+                    <span>Schedule a Meet</span>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </button>
+                </a>
               </li>
 
               <li>
-
                 <a
                   href="https://api.whatsapp.com/send?phone=919793427703&text=Hello%2C%20I%27m%20interested%20in%20exploring%20your%20technology%20services."
                 >
@@ -122,65 +123,61 @@
             </ul>
           </div>
         </nav>
-
       </div>
     </header>
 
     <main>
       <article>
-       
         <section class="video-section" id="home">
-          
           <video autoplay muted loop>
-            <source src="/assets/images/gaming_pc_.mp4" type="video/mp4">
+            <source src="/assets/images/gaming_pc_.mp4" type="video/mp4" />
           </video>
-            <div class="container outer-container container-opacity">
-              <h2 class="h1 hero-title">
-                Empowering Innovation through Technology
-              </h2>
+          <div class="container outer-container container-opacity">
+            <h2 class="h1 hero-title">
+              Empowering Innovation through Technology
+            </h2>
 
-              <p class="section-text">
-                We focus on providing solutions for our customers and assisting
-                them on their pain points.
-              </p>
+            <p class="section-text">
+              We focus on providing solutions for our customers and assisting
+              them on their pain points.
+            </p>
 
-              <link
-                  href="https://assets.calendly.com/assets/external/widget.css"
-                  rel="stylesheet"
-                />
-               
-                  <script
-                    src="https://assets.calendly.com/assets/external/widget.js"
-                    type="text/javascript"
-                    async
-                  ></script>
-<div class="inner-button">
-                  <a
-                    href=""
-                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/prajjwalpandey641/pp641'});return false;"
-                    >
-                      <button class="btn btn-secondary inner-display ">
-                    
-                          <span>Schedule a Meet</span>
-                          <ion-icon name="calendar-outline"></ion-icon>
-                          <ion-icon name="chevron-forward-outline"></ion-icon>
-                      </button> 
-                  </a>
+            <link
+              href="https://assets.calendly.com/assets/external/widget.css"
+              rel="stylesheet"
+            />
 
-                  <a
-                  href="https://api.whatsapp.com/send?phone=919793427703&text=Hello%2C%20I%27m%20interested%20in%20exploring%20your%20technology%20services."
+            <script
+              src="https://assets.calendly.com/assets/external/widget.js"
+              type="text/javascript"
+              async
+            ></script>
+            <div class="inner-button">
+              <a
+                href=""
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/prajjwalpandey641/pp641'});return false;"
+              >
+                <button class="btn btn-secondary inner-display">
+                  <span>Schedule a Meet</span>
+                  <ion-icon name="calendar-outline"></ion-icon>
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+              </a>
+
+              <a
+                href="https://api.whatsapp.com/send?phone=919793427703&text=Hello%2C%20I%27m%20interested%20in%20exploring%20your%20technology%20services."
+              >
+                <button
+                  class="btn btn-secondary inner-display"
+                  id="connect-whatsapp"
                 >
-                  <button class="btn btn-secondary inner-display" id="connect-whatsapp">
-                    <span>Connect on</span>
-                    <ion-icon name="logo-whatsapp"></ion-icon>
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-                  </button>
-                </a>
-
-              </div>
-
+                  <span>Connect on</span>
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+              </a>
             </div>
-          
+          </div>
         </section>
 
         <section class="features" id="projects">
@@ -494,7 +491,6 @@
             <p class="h3 contact-title">Contact with us</p>
 
             <ul class="contact-list">
-
               <li class="contact-item">
                 <div class="contact-icon">
                   <ion-icon name="mail-outline"></ion-icon>
@@ -526,8 +522,7 @@
                   class="contact-link"
                   >Connect via Form</a
                 >
-                </li>
-
+              </li>
             </ul>
           </div>
         </div>
@@ -547,14 +542,19 @@
             </li>
 
             <li>
-              <a href="#" class="social-link">
+              <a
+                href="https://x.com/steepnote641?t=2GzmpSBAgR5K3jx3h4RKGw&s=35"
+                target="_blank"
+                class="social-link"
+              >
                 <ion-icon name="logo-twitter"></ion-icon>
               </a>
             </li>
 
             <li>
               <a
-                href="https://www.linkedin.com/in/prajjwal-pandey-518a22172/"
+                target="_blank"
+                href="https://www.linkedin.com/company/102724899/"
                 class="social-link"
               >
                 <ion-icon name="logo-linkedin"></ion-icon>
@@ -562,7 +562,11 @@
             </li>
 
             <li>
-              <a href="#" class="social-link">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/steepnote?igsh=MWF4cmMwNXJzcDJmbA=="
+                class="social-link"
+              >
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
